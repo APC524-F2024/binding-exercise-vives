@@ -9,4 +9,7 @@ namespace py = pybind11;
 PYBIND11_MODULE(_core, m) {
   py::class_<HarmonicOscillator>(m, "HarmonicOscillator")
     .def(py::init())
+    .def("compute_step", &HarmonicOscillator::compute_step)
+    .def("integrate", &HarmonicOscillator::integrate)
+    .def("f", &HarmonicOscillator::f)
 }
