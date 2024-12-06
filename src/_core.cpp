@@ -12,4 +12,5 @@ PYBIND11_MODULE(_core, m) {
     .def("compute_step", &HarmonicOscillator::compute_step)
     .def("integrate", &HarmonicOscillator::integrate)
     .def("f", &HarmonicOscillator::f)
+  ;
 }
